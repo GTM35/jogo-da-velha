@@ -1,0 +1,68 @@
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --font-title: "Press Start 2P", cursive;
+  --font-normal: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-normal);
+}
+
+/* Header */
+
+.title-content {
+  background-color: #bbb;
+  height: 20vh;
+}
+
+.title-text {
+  font-family: var(--font-title);
+}
+
+/* Main */
+
+.game {
+  width: 100vw;
+  height: 70vh;
+  background-color: #ccc;
+}
+
+.game-content {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+}
+
+.square {
+  background-color: #ddd;
+}
+
+.square:nth-child(3n + 1) {
+  border-bottom: 1px solid red;
+}
+
+.square:nth-child(3n + 2) {
+  border-bottom: 1px solid red;
+  border-right: 1px solid red;
+  border-left: 1px solid red;
+}
+
+.square:nth-child(3n + 3) {
+  border-bottom: 1px solid red;
+}
+
+.square:nth-child(n + 7) {
+  border-bottom: none;
+}
+
+/* Footer */
+
+.rodape {
+  height: 10vh;
+  background-color: #ddd;
+}
