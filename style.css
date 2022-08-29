@@ -40,20 +40,30 @@
 
 .square {
   background-color: #ddd;
+  font-size: 2rem;
+  font-family: var(--font-normal);
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.square:hover {
+  background-color: #fff;
 }
 
 .square:nth-child(3n + 1) {
-  border-bottom: 1px solid red;
+  border-bottom: 3px solid red;
 }
 
 .square:nth-child(3n + 2) {
-  border-bottom: 1px solid red;
-  border-right: 1px solid red;
-  border-left: 1px solid red;
+  border-bottom: 3px solid red;
+  border-right: 3px solid red;
+  border-left: 3px solid red;
 }
 
 .square:nth-child(3n + 3) {
-  border-bottom: 1px solid red;
+  border-bottom: 3px solid red;
 }
 
 .square:nth-child(n + 7) {
@@ -63,6 +73,6 @@
 /* Footer */
 
 .rodape {
-  height: 10vh;
   background-color: #ddd;
+  height: 10vh;
 }
